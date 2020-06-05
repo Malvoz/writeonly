@@ -1475,7 +1475,7 @@ leakage via cross-site scripting attacks.</p>
          </ol>
        </ol>
       <li><a href="#form-writeonly-directive"><span class="secno">2.2</span> <span class="content">The <code>form-writeonly</code> Content Security Policy directive</span></a>
-      <li><a href="#element-behavior"><span class="secno">2.3</span> <span class="content"><code>&amp;lt;input&amp;gt;</code> element behavior</span></a>
+      <li><a href="#element-behavior"><span class="secno">2.3</span> <span class="content"><code>&lt;input&gt;</code> element behavior</span></a>
       <li>
        <a href="#opaque-formdata"><span class="secno">2.4</span> <span class="content">Opaque <code>FormData</code> objects</span></a>
        <ol class="toc">
@@ -1592,7 +1592,7 @@ leakage via cross-site scripting attacks.</p>
   all <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-input-element">input</a></code>, <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-select-element">select</a></code>, and <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-textarea-element">textarea</a></code> elements <a data-link-type="dfn">associated</a> with that form.</p>
      <li data-md="">
       <p>If an element’s <a data-link-type="dfn" href="#write-only-value-flag" id="ref-for-write-only-value-flag-2">write-only value flag</a> is set, then JavaScript access to the element’s
-  value is blocked in a number of ways, spelled out in <a href="#element-behavior">§2.3 &amp;lt;input&amp;gt; element behavior</a> and <a href="#opaque-formdata">§2.4 Opaque FormData objects</a>.</p>
+  value is blocked in a number of ways, spelled out in <a href="#element-behavior">§2.3 &lt;input&gt; element behavior</a> and <a href="#opaque-formdata">§2.4 Opaque FormData objects</a>.</p>
     </ol>
     <p class="note" role="note">Note: Removing the <code>writeonly</code> attribute from an element will not clear any <a data-link-type="dfn" href="#write-only-value-flag" id="ref-for-write-only-value-flag-3">write-only value
   flags</a> which may have been set. Once that flag is set for an element, it cannot be cleared.</p>
@@ -1672,7 +1672,7 @@ directive-value = "" / *WSP [ <a data-link-type="dfn" href="#autocomplete-token"
        <p>Otherwise, set <var>context</var>’s <a data-link-type="dfn" href="#document-forced-write-only-types" id="ref-for-document-forced-write-only-types-2">forced write-only types</a> to this <a data-link-type="dfn" href="https://w3c.github.io/webappsec-csp/#directives">directive</a>’s <a data-link-type="dfn" href="https://w3c.github.io/webappsec-csp/#directive-value">value</a>.</p>
      </ol>
     </div>
-    <h3 class="heading settled" data-level="2.3" id="element-behavior"><span class="secno">2.3. </span><span class="content"><code>&amp;lt;input&amp;gt;</code> element behavior</span><a class="self-link" href="#element-behavior"></a></h3>
+    <h3 class="heading settled" data-level="2.3" id="element-behavior"><span class="secno">2.3. </span><span class="content"><code>&lt;input&gt;</code> element behavior</span><a class="self-link" href="#element-behavior"></a></h3>
     <p class="issue" id="issue-f871e681"><a class="self-link" href="#issue-f871e681"></a> Expand this to include <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-form-element">form</a></code>, <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-select-element">select</a></code>, and <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-textarea-element">textarea</a></code>.</p>
     <p>If an <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-input-element">input</a></code> element (<var>input</var>)'s <a data-link-type="dfn" href="#write-only-value-flag" id="ref-for-write-only-value-flag-4">write-only value flag</a> is set, <var>input</var>’s <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/dom.html#document">Document</a></code>'s <a data-link-type="dfn" href="#document-forced-write-only-types" id="ref-for-document-forced-write-only-types-3">forced write-only types</a> is « "<code>*</code>" », or if <var>input</var>’s <a data-link-type="element-attr" href="https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete">autocomplete</a> attribute contains one or more values which are also <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list-contain">contained</a> in <var>input</var>’s <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/dom.html#document">Document</a></code>'s <a data-link-type="dfn" href="#document-forced-write-only-types" id="ref-for-document-forced-write-only-types-4">forced write-only types</a>, then the following restrictions apply:</p>
     <ol>
@@ -2160,7 +2160,7 @@ directive-value = "" / *WSP [ <a data-link-type="dfn" href="#autocomplete-token"
    <b><a href="#write-only-value-flag">#write-only-value-flag</a></b><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-write-only-value-flag-1">2.1. The writeonly attribute</a> <a href="#ref-for-write-only-value-flag-2">(2)</a> <a href="#ref-for-write-only-value-flag-3">(3)</a>
-    <li><a href="#ref-for-write-only-value-flag-4">2.3. &amp;lt;input&amp;gt; element behavior</a> <a href="#ref-for-write-only-value-flag-5">(2)</a>
+    <li><a href="#ref-for-write-only-value-flag-4">2.3. &lt;input&gt; element behavior</a> <a href="#ref-for-write-only-value-flag-5">(2)</a>
     <li><a href="#ref-for-write-only-value-flag-6">2.4. Opaque FormData objects</a>
     <li><a href="#ref-for-write-only-value-flag-7">2.4.1.1. XHR: FormData constructor</a>
    </ul>
@@ -2207,7 +2207,7 @@ directive-value = "" / *WSP [ <a data-link-type="dfn" href="#autocomplete-token"
    <b><a href="#document-forced-write-only-types">#document-forced-write-only-types</a></b><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-document-forced-write-only-types-1">2.2. The form-writeonly Content Security Policy directive</a> <a href="#ref-for-document-forced-write-only-types-2">(2)</a>
-    <li><a href="#ref-for-document-forced-write-only-types-3">2.3. &amp;lt;input&amp;gt; element behavior</a> <a href="#ref-for-document-forced-write-only-types-4">(2)</a>
+    <li><a href="#ref-for-document-forced-write-only-types-3">2.3. &lt;input&gt; element behavior</a> <a href="#ref-for-document-forced-write-only-types-4">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="formdata-opaque-flag">
